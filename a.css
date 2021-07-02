@@ -1,0 +1,133 @@
+table
+  {
+  color:white;
+  padding:1px;
+  border-color: purple;
+
+}
+h1
+{
+  background-color:#933032;
+ color:white;
+ font-family:arial;
+ font-size: 300%;
+}
+u
+{
+  text-decoration: none;
+}
+h2
+{
+  color:maroon;
+  font-family:arial;
+  font-size: 200%;
+}
+.myHeader 
+{
+  background-color:#933032;
+  color:white;
+  text-align: center;
+  height: 70px;
+
+}
+.myHeader ul
+{
+  display: inline-flex;
+  list-style: none;
+}
+.myHeader ul li
+{
+  width: 120px;
+  margin: 5px;
+  padding: 10px;
+}
+.myHeader ul li a
+{
+  text-decoration: none;
+}
+p{
+  color:black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:110%;
+  background-color: mistyrose;
+  text-align: center;
+
+}
+.hospital {
+  background-color:#933032;
+  color: white;
+  width: 75%;
+  
+}
+.top{
+  width:100%;
+  background-color:#2FA5EB !important;
+  border-bottom:2px solid #f0f0f0;
+}
+.top div{
+  width:1200px;
+  color:#fff;
+  background-color:#2FA5EB !important;
+  font-family:calibri;
+  padding:10px;
+  text-align:right;
+}
+table1
+{
+  color:navy;
+  padding:10px;
+  size: 250px;
+  border:100px;
+  border-color: purple;
+  text-align: center;
+}
+td{
+  text-align: center;
+  font-size:90%;
+}
+hr {
+  position: relative;
+  top: 20px;
+  border: none;
+  height: 5px;
+  background: black;
+  margin-bottom: 50px;
+}
+.dropbtn {
+  background-color: #933032;
+  color: white;
+ 
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:#933032;
+  min-width: 160px;
+ 
+}
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {background-color:maroon;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #933032;min-width: 10px;}
+
+
+
+
+  

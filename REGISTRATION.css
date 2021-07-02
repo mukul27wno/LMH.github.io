@@ -1,0 +1,26 @@
+input 
+{  
+    display: inline-block;   
+    background: #f1f1f1;  
+}  
+.myDiv2
+{
+    width: 400px;
+    margin:100px auto 0px auto;
+}
+.myDiv 
+{
+    background-color: lightskyblue ;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 10px;
+    border:1px solid rgba(255,255,255,0.3);
+    box-shadow: 2px 2px 2px;
+    color: #fff;
+}
+.header
+{
+    color:maroon;
+    font-family: Arial;
+    font-size: 150%;
+}
