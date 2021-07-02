@@ -1,0 +1,219 @@
+<html>
+<head>
+<title>Registration</title>
+
+<link rel="stylesheet" href="external1.css">
+
+</head>
+<body bgcolor="mistyrose" >
+
+    <table>
+        <tr>
+
+            <img src="hos1.png" height="25%" width="15%" ></h1></I><td width="600px" style="font-size:50px;font-family:forte;"> <font color="#428bca"> LIFE MATTERS  </font><font color="#000"> Hospital</font> </td>
+
+        </tr>
+        
+
+    </table>
+    
+    <h1 id="myHeader" align="center">
+        
+    <table  width="80%" align="right">
+         
+        <tr>
+            <th> <a href="1ST.html" style="color: white"> HOME </a></th>
+            <th> <a href="REGISTRATION1.html" style=" color: white">REGISTRATION </a></th>
+            <th> <a href="a.html" style=" color: white">MEDICINES</a> </th>
+            <th> <a href="Procedures.html" style=" color: white">PROCEDURES</a></th>
+            <th> <a href="LOCATIONS.html" style="color: white"> LOCATIONS </a></th>
+            <th> SEARCH </th>
+        
+            
+        </tr>
+
+    </table><br>
+
+    </h1>
+    <div class="myDiv2">
+        <h2 align="center"><u>New REGISTRATION</u></h2>
+        <h3 align="center">Note: Column marked with * are compulsory to fill in.</h3>
+        <br>
+<form action="registration.php">
+        <div class="myDiv">
+            <h3 class="header">Identification Details</h3>
+
+            <label for="initial">Initial: </label>
+            <select name="initial">
+                <option value="">Select Initial</option>
+                <option value="Mr">Mr.</option>
+                <option value="Ms.">Ms.</option>
+                <option value="Mastr.">Mastr.</option>
+                <option value="Smt.">Smt.</option>
+                <option value="Mrs.">Mrs.</option>
+                <option value="Miss.">Miss.</option>
+                <option value="Dr.">Dr.</option>
+                <option value="Baby">Baby.</option>
+            </select><br><br>
+            <label for="fname">*First name:</label>
+            <input type="text" id="fname" name="fname" placeholder="Enter First Name" required><br><br>
+            <label for="lname">*Last name:</label>
+            <input type="text" id="lname" name="lname" placeholder="Enter Last Name" required><br><br>
+            <label for="contact">Contact number: </label>
+            <input type="number" id="contact" name="contact" placeholder="Enter Contact Number"><br><br>
+            <label for="email">Email ID:</label>
+            <input type="text" id="email" name="email" placeholder="Enter Email id"><br><br>
+        </div>
+        <br>
+        <div class="myDiv">
+            <h3 class="header">Referral Information</h3>
+            <label for="referral">Referred By Doctor/Hospital Clinic: </label>
+            <input type="text" id="referral" name="referral" placeholder="Enter Referral Name"><br><br>
+            <label for="reAddress">Address of Referring doctor/Hospital Clinic: </label>
+            <input type="text" id="readdress" name="reAddress" placeholder="Refferal Adders"><br><br></input>
+            <label for="referred">Referred For: </label>
+            <select name="referred">
+                <option value="TREATMENT">TREATMENT</option>
+                <option value="EVALUATION">EVALUATION</option>
+                <option value="FOLLOWUP">FOLLOWUP</option>
+                <option value="INVESTIGATION">INVESTIGATION</option>
+                <option value="MEDICAL">MEDICAL</option>
+                <option value="MINOR OT">MINOR OT</option>
+                <option value="NO RS">NO RS</option>
+                <option value="OT">OT</option>
+                <option value="PLANNING">PLANNING</option>
+                <option value="REVIEW">REVIEW</option>
+                <option value="SCOPY">SCOPY</option>
+            </select>
+        </div>
+        <br><br>
+        <div class="myDiv">
+            <h3 class="header">Personal Information</h3>
+            <h4>1.Please enter either Date of Birth or Age at registration.</h4>
+            <h4>2.Passport details are compulsory to fill up if you are Foreign National</h4>
+            <label for="dob">*DOB: </label>
+            <input type="date" id="dob" name="dob" required><br><br></input>
+            <label for="gender">*Gender: </label>
+            <select name="gender" required>
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+                <option value="o">others</option>
+            </select>
+            <br><br>
+            <label for="MStatus">Marital Status: </label>
+            <select name="MStatus">
+                <option value="1">UNMARRIED</option>
+                <option value="2">MARRIED</option>
+                <option value="3">WIDOWER</option>
+                <option value="4">DIVORCED</option>
+                <option value="5">SEPERATED</option>
+                <option value="6">WIDOW</option>
+                <option value="7">OTHERS</option>
+                <option value="9">UNKNOWN</option>
+            </select><br><br>
+            <label for="fathername">Father/Spouse's Name: </label>
+            <input type="text" id="fathername" name="fathername"
+                placeholder="Enter Father/Spouse's Name"><br><br></input>
+            <label for="Education">*Education: </label>
+            <select name="Education" required>
+                <option value="1">ILLITERATE</option>
+                <option value="2">LITERATE</option>
+                <option value="3">PRIMARY</option>
+                <option value="4">MIDDLE</option>
+                <option value="5">SECONDARY</option>
+                <option value="6">TECHNICAL</option>
+                <option value="7">COLLEGE AND ABOVE</option>
+                <option value="8">OTHERS</option>
+                <option value="9">UNKNOWN</option>
+                <option value="10">LESS THAN 5 YRS OLD</option>
+            </select><br><br>
+            <label for="Occupation">Occupation: </label>
+            <select name="Occupation">
+                <option value="1">BUSINESS</option>
+                <option value="2">HOUSE WIFE</option>
+                <option value="3">SERVICE</option>
+                <option value="4">PENSIONER</option>
+                <option value="5">RETIRED</option>
+                <option value="6">STUDENT</option>
+                <option value="7">UNEMPLOYED</option>
+                <option value="8">OTHERS</option>
+                <option value="9">AGRICULTURE</option>
+                <option value="10">UNKNOWN</option>
+            </select><br><br>
+            <label for="fim">Family Income Monthly (Rs.): </label>
+            <input type="text" id="fim" name="fim" placeholder="Enter Family Income"><br><br></input>
+            <label for="Nationality">*Nationality: </label>
+            <select name="Nationality" required>
+                <option value="Indian">Indian</option>
+                <option value="Foreign">Foreign</option>
+                <option value="UNKNOWN">UNKNOWN</option>
+            </select><br><br>
+            <label for="Religion">Religion: </label>
+            <select name="Religion" required>
+                <option value="18">ANGLO INDIAN</option>
+                <option value="3">CHRISTIAN</option>
+                <option value="1">HINDU</option>
+                <option value="5">JAIN</option>
+                <option value="10">JEW</option>
+                <option value="2">MUSLIM</option>
+                <option value="6">NEO-BUDDHIST</option>
+                <option value="8">OTHERS</option>
+                <option value="7">PARSI</option>
+                <option value="4">SIKH</option>
+                <option value="9">UNKNOWN</option>
+            </select><br><br>
+            <label for="*Mother Tongue">*Mother Tongue: </label>
+            <select name="*Mother Tongue" required>
+                <option value="1">ASSAMESE</option>
+                <option value="2">BENGALI</option>
+                <option value="16">ENGLISH</option>
+                <option value="3">GUJARATHI</option>
+                <option value="4">HINDI</option>
+                <option value="5">KANNADA</option>
+                <option value="6">KASHMIRI</option>
+                <option value="19">kONKANI</option>
+                <option value="7">MALAYALAM</option>
+                <option value="8">MARATHI</option>
+                <option value="21">MARWARI</option>
+                <option value="22">NEPALI</option>
+                <option value="9">ORIYA</option>
+                <option value="17">OTHERS</option>
+                <option value="10">PUNJABI</option>
+                <option value="20">RAJASTHANI</option>
+                <option value="11">SANSKRIT</option>
+                <option value="12">SINDHI</option>
+                <option value="13">TAMIL</option>
+                <option value="14">TELUGU</option>
+                <option value="18">TULU</option>
+                <option value="99">UNKNOWN</option>
+                <option value="15">URDU</option>
+            </select><br><br>
+            <label for="Pan No.">Pan No.: </label>
+            <input type="text" name="Pan No." placeholder="Enter Pan No."><br><br></input>
+            <label for="Aadhaar Number">Aadhaar Number: </label>
+            <input type="text" name="Aadhaar Number" placeholder="Enter Aadhaar Number"><br><br></input>
+        </div>
+        <br>
+        <label for="Medical Insurance">Medical Insurance :
+            <input id="Yes" name="Medical Insurance" type="radio" value="true" />Yes
+            <input id="No" name="Medical Insurance" type="radio" value="False" />No
+        </label>
+    </div>
+    </form><br><br>
+    <h5><input type="checkbox" id="tc" name="tc" value="true" required>
+        <b>I understand and agree to provide personal information.*</b>
+    </h5>
+    <button type="submit" value="Submit"><a href="1ST.html">Submit</a></button>
+    <button type="reset" value="Reset"><a href="REGISTRATION1.html">Reset</a></button>
+    <br><br>
+    <br>
+    <div class="top">
+        <br>
+        <div>
+            Contact Us +91 96366 20000 / 01 | LifeM@hospital.com
+        </div>
+    </div>
+</form>
+
+</body>
+</html>
