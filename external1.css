@@ -102,3 +102,9 @@ hr {
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: hsl(325, 81%, 43%);min-width: 10px;}
+
+.mydiv7
+{
+    width: 900px;
+    margin:100px auto 0px auto;
+}

@@ -7,7 +7,9 @@
     <link rel="icon" href="hos1.png" type="image/x-icon">
 
 </head>
-
+<style>
+    .mySlides {display:none;}
+    </style>
 
 <body bgcolor="mistyrose">
 
@@ -106,16 +108,39 @@
             </tr>
         </table1>
     </center>
-    <br><br><br>
-    <marquee><img src="dr4.jpg"><img src="dr5.jpg"><img src="dr6.jpg"><img src="dr7.jpg"><img src="dr8.jpg"></marquee>
-
+    <div class="mydiv7" >
+        <div align ="center">
+        <img align = "center" class="mySlides" src="dr4.jpg" style="width:100%">
+        <img align = "center" class="mySlides" src="dr5.jpg" style="width:100%">
+        <img align = "center" class="mySlides" src="dr6.jpg" style="width:100%">
+        <img align = "center" class="mySlides" src="dr7.jpg" style="width:100%">
+        <img align = "center" class="mySlides" src="dr8.jpg" style="width:100%">
+      </div>
+    </div>
+      
+      <script>
+      var slideIndex = 0;
+      carousel();
+      
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none"; 
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {slideIndex = 1} 
+        x[slideIndex-1].style.display = "block"; 
+        setTimeout(carousel, 2000); 
+      }
+      </script>
+      
     <br><br>
     <div class="top">
         <div>
             Contact Us +91 96366 20000 / 01 | LifeM@hospital.com
         </div>
     </div>
-
 
 
 </body>
