@@ -3,7 +3,6 @@
 <head>
     <title>Registration</title>
 
-    <link rel="stylesheet" href="external1.css">
     <link rel="icon" href="hos1.png" type="image/x-icon">
     <link rel="stylesheet" href="REGISTRATION.css">
 
@@ -44,12 +43,12 @@
 
     </h1>
     <div class="myDiv2">
-        <h2 align="center"><u>New REGISTRATION</u></h2>
+        <h1 align="center"><u>NEW REGISTRATION</u></h1>
         <h3 align="center">Note: Column marked with * are compulsory to fill in.</h3>
         <br>
         <form action="registration.php" method="POST">
             <div class="myDiv">
-                <h3 class="header">Identification Details</h3>
+                <h2 class="header">Identification Details</h2>
 
                 <label for="initial">Initial: </label>
                 <select name="initial">
@@ -74,7 +73,7 @@
             </div>
             <br>
             <div class="myDiv">
-                <h3 class="header">Referral Information</h3>
+                <h2 class="header">Referral Information</h2>
                 <label for="referral">Referred By Doctor/Hospital Clinic: </label>
                 <input type="text" id="referral" name="referral" placeholder="Enter Referral Name"><br><br>
                 <label for="reAddress">Address of Referring doctor/Hospital Clinic: </label>
@@ -97,9 +96,7 @@
             </div>
             <br><br>
             <div class="myDiv">
-                <h3 class="header">Personal Information</h3>
-                <h4>1.Please enter either Date of Birth or Age at registration.</h4>
-                <h4>2.Passport details are compulsory to fill up if you are Foreign National</h4>
+                <h2 class="header">Personal Information</h2><br>
                 <label for="dob">*DOB: </label>
                 <input type="date" id="dob" name="dob" required><br><br></input>
                 <label for="gender">*Gender: </label>
@@ -210,15 +207,18 @@
                 <input type="text" name="Aadhaar_Number" placeholder="Enter Aadhaar Number"><br><br></input>
             </div>
             <br>
-            <label for="Medical_Insurance">Medical Insurance :
-                <input id="Yes" name="Medical_Insurance" type="radio" value="true" />Yes
-                <input id="No" name="Medical_Insurance" type="radio" value="False" />No
+            <h3>
+                <label for="Medical_Insurance">Medical Insurance :
+                    <input id="Yes" name="Medical_Insurance" type="radio" value="true" />Yes
+                    <input id="No" name="Medical_Insurance" type="radio" value="False" />No
+            </h3>
             </label>
+
     </div>
     <br><br>
-    <h5><input type="checkbox" id="tc" name="tc" value="true" required>
+    <h3><input type="checkbox" id="tc" name="tc" value="true" required>
         <b>I understand and agree to provide personal information.*</b>
-    </h5>
+    </h3>
     <input type="submit" />
     <button type="reset" value="Reset"><a href="REGISTRATION1.html">Reset</a></button>
     <br><br>

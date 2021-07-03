@@ -1,144 +1,104 @@
-html{
-  font-size: 62.5%;
-}
+table{color:white;
+  padding:1px;
   
-  table{color:white;
-    padding:0.1rpm;
-    
-    border-color: purple;
+  border-color: purple;
 
-  }
-  h1
-  {
-      color:maroon;
-      font-family:arial;
-      font-size: 300%;
-  }
-  h2
-  {
-      color:maroon;
-      font-family:arial;
-      font-size: 200%;
-  }
-  #myHeader {
-    padding: 2rpm;
-    text-align: center;
-  }
-  p{
-    color:black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size:110%;
-    text-align: center;
+}
+h1
+{
+    color:maroon;
+    font-family:arial;
+    font-size: 300%;
+}
+h2
+{
+    color:maroon;
+    font-family:arial;
+    font-size: 200%;
+}
+#myHeader {
+  background-color:#933032;
+  color:maroon;
+  padding: 20px;
+  text-align: center;
+}
+p{
+  color:black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:110%;
+  
+  text-align: center;
 
-  }
-  .hospital {
-    background-color:#933032;
-    color: white;
-    width: 75%;
-    
-  }
-  .top{
-    width:100%;
-    background-color:#2FA5EB !important;
-    border-bottom:0.2rpm solid #f0f0f0;
-  }
-  .top div{
-    width:120rpm;
-    color:#fff;
-    background-color:#2FA5EB !important;
-    font-family:calibri;
-    padding:1rpm;
-    text-align:right;
-  }
-  table1
-  {
-    color:navy;
-    padding:1rpm;
-    size: 25rpm;
-    border:10rpm;
-    border-color: purple;
-    text-align: center;
-  }
+}
+.hospital {
+  background-color:#933032;
+  color: white;
+  width: 75%;
+  
+}
+.top{
+  width:100%;
+  background-color:#2FA5EB !important;
+  border-bottom:2px solid #f0f0f0;
+}
+.top div{
+  width:1200px;
+  color:#fff;
+  background-color:#2FA5EB !important;
+  font-family:calibri;
+  padding:10px;
+  text-align:right;
+}
+table1
+{
+  color:navy;
+  padding:10px;
+  size: 250px;
+  border:100px;
+  border-color: purple;
+  text-align: center;
+}
 
-  td{
-    text-align: center;
-    font-size:90%;
-  }
-  hr {
-    position: relative;
-    top: 2rpm;
-    border: none;
-    height: 0.5rpm;
-    background: black;
-    margin-bottom: 5rpm;
+td{
+  text-align: center;
+  font-size:90%;
 }
-  .dropbtn {
-    background-color: mistyrose;
-    color: rgb(0, 0, 0);
-    padding: 1.6rpm;
-    font-size: 1.6rpm;
-    border: none;
-  }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: aquamarine;
-    min-width: 16rpm;
-  }
-  .dropdown-content a {
-    color: black;
-    padding: 1.2rpm 1.6rpm;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown-content a:hover {background-color:hsl(325, 81%, 43%);}
-  
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  .dropdown:hover .dropbtn {background-color: hsl(325, 81%, 43%);min-width: 1rpm;}
-  
-  input 
-  {  
-      display: inline-block;   
-      background: #f1f1f1;  
-  }  
-  .myDiv2
-  {
-      width: 40rpm;
-      margin:10rpm auto 0rpm auto;
-  }
-  .myDiv 
-  {
-      background-color: mistyrose ;
-      width: 100%;
-      font-size: 1.8rpm;
-      border-radius: 1rpm;
-      border:0.1rpm solid maroon;
-      box-shadow: 0.2rpm 0.2rpm 0.2rpm;
-      color: maroon;
-  }
-  .header
-  {
-      color:maroon;
-      font-family: Arial;
-      font-size: 150%;
-  }
-@media(max-width:998px){
-  html{
-  font-size: 55%;
+hr {
+  position: relative;
+  top: 20px;
+  border: none;
+  height: 5px;
+  background: black;
+  margin-bottom: 50px;
 }
+.dropbtn {
+  background-color: mistyrose;
+  color: rgb(0, 0, 0);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
 }
-@media(max-width:768px){
-html{
-  font-size:45%;
+
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: aquamarine;
+  min-width: 160px;
 }
-    
-  
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color:hsl(325, 81%, 43%);}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: hsl(325, 81%, 43%);min-width: 10px;}
