@@ -23,7 +23,8 @@ input
 }
 .header
 {
-    color:maroon;
+    color: white;
+    background-color:maroon;
     font-family: Arial;
     font-size: 150%;
 }
