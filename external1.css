@@ -22,13 +22,7 @@ h2
   padding-top: 20px;
   text-align: center;
 }
-#myHeader1 {
-  background-color:#933032;
-  color:maroon;
-  border-radius: 20px;
-  padding: 10px;
-  text-align: center;
-}
+
 p{
   color:black;
   font-family: Arial, Helvetica, sans-serif;
@@ -42,11 +36,7 @@ p{
   width: 75%;
   
 }
-.top{
-  width:100%;
-  background-color:#2FA5EB !important;
-  border-bottom:2px solid #f0f0f0;
-}
+
 .top div{
   width:1200rpm;
   color:#fff;
@@ -55,15 +45,7 @@ p{
   padding:10px;
   text-align:right;
 }
-table1
-{
-  color:navy;
-  padding:10px;
-  size: 250px;
-  border:100px;
-  border-color: purple;
-  text-align: center;
-}
+
 
 td{
   text-align: center;
