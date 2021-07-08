@@ -6,15 +6,10 @@
 
 </head>
 <body bgcolor="mistyrose" >
-
     <table>
         <tr>
-
             <img src="hos1.png" height="25%" width="15%" ></h1></I><td width="600px" style="font-size:50px;font-family:forte;"> <font color="#428bca"> LIFE MATTERS  </font><font color="#000"> Hospital</font> </td>
-
         </tr>
-        
-
     </table>
     
     <h1 id="myHeader" align="center">
@@ -26,12 +21,9 @@
             <th> <a href="REGISTRATION1.html" style=" color: white">REGISTRATION </a></th>
             <th> <a href="a.html" style=" color: white">MEDICINES</a> </th>
             <th> <a href="Procedures.html" style=" color: white">PROCEDURES</a></th>
-            <th> <a href="LOCATIONS.html" style="color: white"> LOCATIONS </a></th>
+            <th> <a href="LOCATIONS.html" style="color: white"> LOCATIONS </a ></th>
             <th> SEARCH </th>
-        
-            
         </tr>
-
     </table><br>
     <h1 align="center" >Error ):  -</h1>
     
