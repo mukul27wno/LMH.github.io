@@ -35,12 +35,19 @@
             </tr>
 
         </table><br>
-        <?php
         
-        ?>
 
 
         <h1 align="center">Registration Successful!!</h1>
+        <?php
+        mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+        ini_set("display_errors","1");
+        error_reporting(E_ALL);
+
+        include_once('registration.php');
+        $query="select * from Doctors";
+
+        ?>
         <div class="top">
             <br>
             <div>
