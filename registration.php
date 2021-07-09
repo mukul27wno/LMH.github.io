@@ -14,10 +14,10 @@
     
     <h1 id="myHeader" align="center">
         
-    <table  width="80%" align="right">
+    <table  width="100%" align="right">
          
         <tr>
-            <th> <a href="1ST.html" style="color: white"> HOME </a></th>
+            <th> <a href="index.html" style="color: white"> HOME </a></th>
             <th> <a href="REGISTRATION1.html" style=" color: white">REGISTRATION </a></th>
             <th> <a href="a.html" style=" color: white">MEDICINES</a> </th>
             <th> <a href="Procedures.html" style=" color: white">PROCEDURES</a></th>
@@ -32,14 +32,21 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 ini_set("display_errors","1");
 error_reporting(E_ALL);
 
+session_start();
 $initial = $_POST['initial'];
+$_SESSION['initial']=$initial;
 $fname = $_POST['fname'];
+$_SESSION['fname'] = $fname;
 $lname = $_POST['lname'];
+$_SESSION['lanme'] = $lname;
 $contact = $_POST['contact'];
+$_SESSION['contact'] = $contact;
 $email = $_POST['email'];
+$_SESSION['email'] = $email;
 $referral = $_POST['referral'];
 $reAddress = $_POST['reAddress'];
 $referred = $_POST['referred'];
+$_SESSION['referred'] = $referred;
 $dob = $_POST['dob'];
 $gender = $_POST['gender'];
 $MStatus = $_POST['MStatus'];
@@ -74,15 +81,18 @@ $conn = mysqli_connect('localhost','root','','project');
  $sql = "INSERT INTO `registration` VALUES ('$initial','$fname','$lname','$contact','$email','$referral','$reAddress','$referred','$dob','$gender','$MStatus','$fathername','$Education','$Occupation','$fim','$Nationality','$Religion','$Mother_Tongue','$Pan_No','$Aadhaar_Number','$Medical_Insurance','$tc')";
  
 
-$result= mysqli_query($conn,$sql);
+ $result= mysqli_query($conn,$sql);
 
-if($result){
-    header('Location: Registration_Successful.html');
+
+ if($result){
+    header('Location: Registration_Successful.php');
 }
 else {
-    header('Location: 1ST.html');
+    header('Location: index.html');
 
 }
+           
+
 //exit;}
 
 /*intial,fname,lname,contact,email,referral,reAddress,referred,dob,gender,MStatus,fathername,Education,Occupation,
@@ -101,5 +111,4 @@ fim,Nationality,Religion,Mother_Tongue,Pan_No,Aadhaar_Number,Medical_Insurance,t
 </html>
 
  
-
 

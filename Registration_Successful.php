@@ -1,9 +1,10 @@
+
 <html>
 
 <head>
     <title>Registration</title>
 
-    <link rel="stylesheet" href="external1.css">
+    <link rel="stylesheet" href="REGISTRATION.css">
     <link rel="icon" href="hos1.png" type="image/icon type">
 </head>
 
@@ -31,31 +32,58 @@
                 <th> <a href="LOCATIONS.html" style="color: white"> LOCATIONS </a></th>
                 <th> SEARCH </th>
 
-
             </tr>
 
         </table><br>
-        
 
-
-        <h1 align="center">Registration Successful!!</h1>
+        <h1 align="center">Appointment Booked!!</h1>
         <?php
         mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
         ini_set("display_errors","1");
         error_reporting(E_ALL);
-
-        include_once('registration.php');
-        $query="select * from Doctors";
-
+        session_start();
+        $conn = mysqli_connect('localhost','root','','project');
+        $rr = $_SESSION['referred'];
+        $query="SELECT * FROM `doctors` WHERE Referred = '$rr'";
+        $result= mysqli_query ($conn,$query);
+        $date = date('d')+3;
+        $mon = date('M');
+            if($result->num_rows>0)
+            {
+            while($row = $result->fetch_assoc())
+            {
         ?>
+        <body>
+            <div class = "rs1">
+                <h3>Name: <?php echo $_SESSION['initial'] ?> <?php echo $_SESSION['fname'] ?> <?php echo $_SESSION['lanme']?>
+                </h3>
+                <br>
+                <h3>Contact : <?php echo $_SESSION['contact'] ?>
+                </h3>
+                <br>
+                <h3>Email : <?php echo $_SESSION['email'] ?>
+                </h3>
+                <br>
+                <h3>Doctor : <?php echo $row['initial'] ?> <?php echo $row['fname'] ?> <?php echo $row['lname']?>     
+                </h3>
+                <br>
+                <h3>Room No. : <?php echo $row['Room'] ?>    
+                </h3>
+                <br>
+                <h3>Date : <?php echo $date?> <?php echo $mon?> <?php echo "8Am"?> 
+                <br>
+                
+            </div>
+            <h3></h3>
+        </body>
+        <?php
+            }}
+        ?>
+        
         <div class="top">
             <br>
             <div>
                 Contact Us +91 96366 20000 / 01 | LifeM@hospital.com
             </div>
         </div>
-        </form>
-
-</body>
-
-</html>
+        
