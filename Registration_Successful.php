@@ -4,7 +4,7 @@
 <head>
     <title>Registration</title>
 
-    <link rel="stylesheet" href="REGISTRATION.css">
+    <link rel="stylesheet" href="regs.css">
     <link rel="icon" href="hos1.png" type="image/icon type">
 </head>
 
@@ -37,6 +37,8 @@
         </table><br>
 
         <h1 align="center">Appointment Booked!!</h1>
+        <center>
+        <big>
         <?php
         mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
         ini_set("display_errors","1");
@@ -76,6 +78,8 @@
             </div>
             <h3></h3>
         </body>
+        </big>
+        </center>
         <?php
             }}
         ?>

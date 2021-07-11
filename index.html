@@ -1,10 +1,18 @@
 <html>
-
 <head>
     <title>HOSPITAL</title>
     <link rel="stylesheet" href="external1.css">
     <link rel="icon" href="hos1.png" type="image/x-icon">
+    <script>
+        function goback() {
+            window.history.back()
+        }
+        function goForward() {
+            window.history.forward()
+        }
+    </script>
 </head>
+
 <style>
     .mySlides {
         display: none;
@@ -14,25 +22,28 @@
 <body bgcolor="mistyrose">
     <table>
         <tr>
-            <td><img src="hos1.png" ></h1></I></td>
+            <td><img src="hos1.png"></h1></I></td>
             <td style="font-size:50px;">
                 <font color="#428bca"> LIFE MATTERS </font>
                 <font color="#000"> Hospital</font>
             </td>
         </tr>
     </table>
-    <h1 id="myHeader" align="center">
+    <div class="myHeader2">
         <table class="myHeader" width=100%" align="right">
             <tr>
+                <th><input type="button" class="bt" value="<" onclick="goBack()"></th>
                 <th> <a href="index.html" style="color: white"> HOME </a></th>
                 <th> <a href="REGISTRATION1.html" style=" color: white">REGISTRATION </a></th>
                 <th> <a href="a.html" style=" color: white">SPECIALIZATION</a> </th>
                 <th> <a href="Procedures.html" style=" color: white">PROCEDURES</a> </th>
                 <th> <a href="LOCATIONS.html" style="color: white"> LOCATIONS </a></th>
-                <th> SEARCH </th>
+                <th> <input type="button" class="bt" value=">" onclick="goForward()"></th>
+
             </tr>
         </table><br>
-    </h1>
+        </h1>
+    </div>
     <img src="2645.jpg " width="100%">
     <br>
     <center>
@@ -87,7 +98,7 @@
             </tr>
         </table1>
     </center>
-<!---    <div class="mydiv7">
+    <div class="mydiv7">
         <div align="center">
             <img align="center" class="mySlides" src="dr4.jpg" style="width:100%">
             <img align="center" class="mySlides" src="dr5.jpg" style="width:100%">
@@ -111,15 +122,59 @@
             setTimeout(carousel, 2000);
         }
     </script>
--->
-    <br><br><br>
-<marquee>  <img src="dr4.jpg"> <img src="dr5.jpg">  <img src="dr6.jpg">  <img src="dr7.jpg">  <img src="dr8.jpg"> </marquee>
 
+    <br><br><br>
+
+    <!-- <marquee>  <img src="dr4.jpg"> <img src="dr5.jpg">  <img src="dr6.jpg">  <img src="dr7.jpg">  <img src="dr8.jpg"> </marquee>
+-->
     <br><br>
-    <div class="top">
+    <!--    <div class="top">
         <div>
             Contact Us +91 96366 20000 / 01 | LifeM@hospital.com
         </div>
+    </div>
+-->
+    <div class="footer">
+
+        <table>
+            <th>
+                <ul style="margin-bottom: 140px;">
+                    <h3>About us</h3>
+                    <h3>
+                        <li><b>Pathway to Infinite Possibilities!</b> With this idea</li>
+                        <li> in our minds and dreams to excel, we take a step towards endless </li>
+                        <li> prospects to be the very best like the Aurora borealis.</li>
+                    </h3>
+                </ul>
+            </th>
+
+            <th>
+                <ul>
+                    <h3>SPECIALIZATION</h3>
+                    <h3>HOME</h3>
+                    <h3>REGISTRATION</h3>
+                    <h3>SPECIALIZATION</h3>
+                    <h3>PROCEDURES</h3>
+                    <h3>LOCATIONS</h3>
+                </ul>
+            </th>
+            <th>
+                <ul style="margin-bottom: -200px;margin-left: 200px;  ">
+                    <h3>
+                        <li><a href="mailto@20BCS5125@cuchd.in">20BCS5125 </a></li>
+                        <li><a href="mailto@20BCS5155@cuchd.in">20BCS5155 </a></li>
+                        <li><a href="mailto@20BCS5156@cuchd.in">20BCS5156 </a></li>
+                        <li><a href="mailto@20BCS5163@cuchd.in">20BCS5163 </a></li>
+                    </h3>
+                </ul>
+            </th>
+        </table>
+        <hr style="background-color: white;">
+
+        <p style="color: white; text-align: right" ;>Contact Us +91 96366 20000 / 01 | LifeM@hospital.com <br>
+            Copyright © 2021 Life Matters Hospital. All Right Reserved
+        </p>
+
     </div>
 </body>
 

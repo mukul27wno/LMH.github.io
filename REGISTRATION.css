@@ -4,8 +4,9 @@ html{
 input 
 {  
   display: inline-block;   
-  background: #f1f1f1;  
+  background-color: #f1f1f1;  
 }  
+
 .myDiv2
 {
   width: 900px;
@@ -97,11 +98,21 @@ h2
 }
 #myHeader {
   background-color:#933032;
-  border-radius: 20px;
   color:maroon;
-  padding: 20px;
+  border-radius: 20px;
+  padding-top: 20px;
   text-align: center;
+  text-decoration: none;
 }
+#myHeader table a:hover
+{
+  
+  border-bottom: 3px solid white;
+  border-top: 3px solid white;
+  border-left:3px solid white;
+  border-right: 3px solid white;
+  text-decoration: none;
+} 
 p{
   color:black;
   font-family: Arial, Helvetica, sans-serif;
@@ -184,14 +195,3 @@ hr {
 
 .dropdown:hover .dropbtn {background-color: hsl(325, 81%, 43%);min-width: 10px;}
 
-.rs1
-{
-  box-shadow: 2px 2px 2px;
-  border: 1px solid maroon;
-  color: maroon;
-  border: 1px solid;
-  width: 400px;
-  margin: 100px auto 0px auto;
-  background-color: mistyrose;
-  border-radius: 10px;
-}

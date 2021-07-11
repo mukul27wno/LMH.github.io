@@ -4,7 +4,16 @@
     <title>Registration</title>
     <link rel="icon" href="hos1.png" type="image/x-icon">
     <link rel="stylesheet" href="REGISTRATION.css">
-
+    <script>
+        function goBack()
+        {
+            window.history.back()
+        }
+        function goForward()
+        {
+            window.history.forward()
+        }
+    </script>
 </head>
 
 <body bgcolor="mistyrose">
@@ -23,14 +32,14 @@
         <table class="myHeader" width=100%" align="right">
 
             <tr>
+                <th ><input type="button" class="bt" value="<" onclick="goBack()"  ></th>
                 <th> <a href="index.html" style="color: white"> HOME </a></th>
                 <th> <a href="REGISTRATION1.html" style=" color: white">REGISTRATION </a></th>
                 <th> <a href="a.html" style=" color: white">SPECIALIZATION</a> </th>
                 <th> <a href="Procedures.html" style=" color: white">PROCEDURES</a></th>
                 <th> <a href="LOCATIONS.html" style="color: white"> LOCATIONS </a></th>
-                <th> SEARCH </th>
-
-
+                <th><input type="button" class="bt" value=">" onclick="goForward()"></th>
+                
             </tr>
 
         </table><br>
@@ -60,190 +69,183 @@
                                     <option value="Baby">Baby.</option>
                                 </select><br><br>
                                 <label for="fname">*First name:</label>
-                                <input type="text" id="fname" name="fname" placeholder="Enter First Name"
-                                    required><br><br>
+                                <input type="text" id="fname" name="fname" placeholder="Enter First Name" required><br><br>
                                 <label for="lname">*Last name:</label>
-                                <input type="text" id="lname" name="lname" placeholder="Enter Last Name"
-                                    required><br><br>
+                                <input type="text" id="lname" name="lname" placeholder="Enter Last Name" required><br><br>
                                 <label for="contact">Contact number: </label>
-                                <input type="number" id="contact" name="contact"
-                                    placeholder="Enter Contact Number"><br><br>
+                                <input type="number" id="contact" name="contact" placeholder="Enter Contact Number"><br><br>
                                 <label for="email">Email ID:</label>
                                 <input type="text" id="email" name="email" placeholder="Enter Email id"><br><br>
-
+                            
                             </div>
-                            <div class="myDiv4">
-                                <br>
-                                <h2 class="header">Referral Information</h2>
-                                <br>
-                                <label for="referral">Referred By Doctor/Hospital Clinic: </label>
-                                <input type="text" id="referral" name="referral"
-                                    placeholder="Enter Referral Name"><br><br>
-                                <br>
-                                <label for="reAddress">Address of Referring doctor Clinic: </label>
-                                <input type="text" id="readdress" name="reAddress"
-                                    placeholder="Refferal Adders"><br><br></input>
-                                <br>
-                                <label for="referred">Referred For: </label>
-                                <select name="referred">
-                                    <option value="">Select referred</option>
-                                    <option value="TREATMENT">TREATMENT</option>
-                                    <option value="EVALUATION">EVALUATION</option>
-                                    <option value="FOLLOWUP">FOLLOWUP</option>
-                                    <option value="INVESTIGATION">INVESTIGATION</option>
-                                    <option value="MEDICAL">MEDICAL</option>
-                                    <option value="MINOR OT">MINOR OT</option>
-                                    <option value="NO RS">NO RS</option>
-                                    <option value="OT">OT</option>
-                                    <option value="PLANNING">PLANNING</option>
-                                    <option value="REVIEW">REVIEW</option>
-                                    <option value="SCOPY">SCOPY</option>
-                                </select>
-                            </div>
-                        </th>
+                                <div class="myDiv4">
+                    <br>
+                        <h2 class="header">Referral Information</h2>
                         <br>
-                        <th>
-                            <div class="myDiv3">
-                                <h2 class="header">Personal Information</h2><br>
-                                <label for="dob">*DOB: </label>
-                                <input type="date" id="dob" name="dob" required><br><br></input>
-                                <label for="gender">*Gender: </label>
-                                <select name="gender" required>
-                                    <option value="">Select gender</option>
-                                    <option value="M">Male</option>
-                                    <option value="F">Female</option>
-                                    <option value="o">others</option>
-                                </select>
-                                <br><br>
-                                <label for="MStatus">Marital Status: </label>
-                                <select name="MStatus">
-                                    <option value="">Select MStatus</option>
-                                    <option value="UNMARRIED">UNMARRIED</option>
-                                    <option value="MARRIED">MARRIED</option>
-                                    <option value="WIDOWER">WIDOWER</option>
-                                    <option value="DIVORCED">DIVORCED</option>
-                                    <option value="SEPERATED">SEPERATED</option>
-                                    <option value="WIDOW">WIDOW</option>
-                                    <option value="OTHERS">OTHERS</option>
-                                    <option value="UNKNOWN">UNKNOWN</option>
-                                </select><br><br>
-                                <label for="fathername">Father/Spouse's Name: </label>
-                                <input type="text" id="fathername" name="fathername"
-                                    placeholder="Enter Father/Spouse's Name"><br><br></input>
-                                <label for="Education">*Education: </label>
-                                <select name="Education" required>
-                                    <option value="">Select Education</option>
-                                    <option value="ILLITERATE">ILLITERATE</option>
-                                    <option value="LITERATE">LITERATE</option>
-                                    <option value="PRIMARY">PRIMARY</option>
-                                    <option value="MIDDLE">MIDDLE</option>
-                                    <option value="SECONDARY">SECONDARY</option>
-                                    <option value="TECHNICAL">TECHNICAL</option>
-                                    <option value="COLLEGE AND ABOVE">COLLEGE AND ABOVE</option>
-                                    <option value="OTHERS">OTHERS</option>
-                                    <option value="UNKNOWN">UNKNOWN</option>
-                                    <option value="LESS THAN 5 YRS OLD">LESS THAN 5 YRS OLD</option>
-                                </select><br><br>
-                                <label for="Occupation">Occupation: </label>
-                                <select name="Occupation">
-                                    <option value="">Select Occupation</option>
-                                    <option value="BUSINESS">BUSINESS</option>
-                                    <option value="HOUSE WIFE">HOUSE WIFE</option>
-                                    <option value="SERVICE">SERVICE</option>
-                                    <option value="PENSIONER">PENSIONER</option>
-                                    <option value="RETIRED">RETIRED</option>
-                                    <option value="STUDENT">STUDENT</option>
-                                    <option value="UNEMPLOYED">UNEMPLOYED</option>
-                                    <option value="OTHERS">OTHERS</option>
-                                    <option value="AGRICULTURE">AGRICULTURE</option>
-                                    <option value="UNKNOWN">UNKNOWN</option>
-                                </select><br><br>
-                                <label for="fim">Family Income Monthly (Rs.): </label>
-                                <input type="text" id="fim" name="fim"
-                                    placeholder="Enter Family Income"><br><br></input>
-                                <label for="Nationality">*Nationality: </label>
-                                <select name="Nationality" required>
-                                    <option value="">Select Nationality</option>
-                                    <option value="Indian">Indian</option>
-                                    <option value="Foreign">Foreign</option>
-                                    <option value="UNKNOWN">UNKNOWN</option>
-                                </select><br><br>
-                                <label for="Religion">Religion: </label>
-                                <select name="Religion" required>
-                                    <option value="">Select Religion</option>
-                                    <option value="ANGLO INDIAN">ANGLO INDIAN</option>
-                                    <option value="CHRISTIAN">CHRISTIAN</option>
-                                    <option value="HINDU">HINDU</option>
-                                    <option value="JAIN">JAIN</option>
-                                    <option value="JEW">JEW</option>
-                                    <option value="MUSLIM">MUSLIM</option>
-                                    <option value="NEO-BUDDHIST">NEO-BUDDHIST</option>
-                                    <option value="OTHERS">OTHERS</option>
-                                    <option value="PARSI">PARSI</option>
-                                    <option value="SIKH">SIKH</option>
-                                    <option value="UNKNOWN">UNKNOWN</option>
-                                </select><br><br>
-                                <label for="Mother_Tongue">*Mother Tongue: </label>
-                                <select name="Mother_Tongue" required>
-                                    <option value="">Select Mother Tongue</option>
-                                    <option value="ASSAMESE">ASSAMESE</option>
-                                    <option value="BENGALI">BENGALI</option>
-                                    <option value="ENGLISH">ENGLISH</option>
-                                    <option value="GUJARATHI">GUJARATHI</option>
-                                    <option value="HINDI">HINDI</option>
-                                    <option value="KANNADA">KANNADA</option>
-                                    <option value="KASHMIRI">KASHMIRI</option>
-                                    <option value="kONKANI">kONKANI</option>
-                                    <option value="MALAYALAM">MALAYALAM</option>
-                                    <option value="MARATHI">MARATHI</option>
-                                    <option value="MARWARI">MARWARI</option>
-                                    <option value="NEPALI">NEPALI</option>
-                                    <option value="ORIYA">ORIYA</option>
-                                    <option value="OTHERS">OTHERS</option>
-                                    <option value="PUNJABI">PUNJABI</option>
-                                    <option value="RAJASTHANI">RAJASTHANI</option>
-                                    <option value="SANSKRIT">SANSKRIT</option>
-                                    <option value="SINDHI">SINDHI</option>
-                                    <option value="TAMIL">TAMIL</option>
-                                    <option value="TELUGU">TELUGU</option>
-                                    <option value="TULU">TULU</option>
-                                    <option value="UNKNOWN">UNKNOWN</option>
-                                    <option value="URDU">URDU</option>
-                                </select><br><br>
-                                <label for="Pan_No">Pan No.: </label>
-                                <input type="text" name="Pan_No" placeholder="Enter Pan No."><br><br></input>
-                                <label for="Aadhaar_Number">Aadhaar Number: </label>
-                                <input type="text" name="Aadhaar_Number"
-                                    placeholder="Enter Aadhaar Number"><br><br></input>
-                            </div>
-
-    </div>
-    </th>
-    </thead>
-    </table>
-    <br>
-
-    <br><br>
-
+                        <label for="referral">Referred By Doctor/Hospital Clinic: </label>
+                        <input type="text" id="referral" name="referral" placeholder="Enter Referral Name"><br><br>
+                        <br>
+                        <label for="reAddress">Address of Referring doctor Clinic: </label>
+                        <input type="text" id="readdress" name="reAddress" placeholder="Refferal Adders"><br><br></input>
+                        <br>
+                        <label for="referred">Referred For: </label>
+                        <select name="referred">
+                            <option value="">Select referred</option>
+                            <option value="TREATMENT">TREATMENT</option>
+                            <option value="EVALUATION">EVALUATION</option>
+                            <option value="FOLLOWUP">FOLLOWUP</option>
+                            <option value="INVESTIGATION">INVESTIGATION</option>
+                            <option value="MEDICAL">MEDICAL</option>
+                            <option value="MINOR OT">MINOR OT</option>
+                            <option value="NO RS">NO RS</option>
+                            <option value="OT">OT</option>
+                            <option value="PLANNING">PLANNING</option>
+                            <option value="REVIEW">REVIEW</option>
+                            <option value="SCOPY">SCOPY</option>
+                        </select>
+                    </div>
+                </th>
+                <br>
+                <th>
+                    <div class="myDiv3">
+                        <h2 class="header">Personal Information</h2><br>
+                        <label for="dob">*DOB: </label>
+                        <input type="date" id="dob" name="dob" required><br><br></input>
+                        <label for="gender">*Gender: </label>
+                        <select name="gender" required>
+                            <option value="">Select gender</option>
+                            <option value="M">Male</option>
+                            <option value="F">Female</option>
+                            <option value="o">others</option>
+                        </select>
+                        <br><br>
+                        <label for="MStatus">Marital Status: </label>
+                        <select name="MStatus">
+                            <option value="">Select MStatus</option>
+                            <option value="UNMARRIED">UNMARRIED</option>
+                            <option value="MARRIED">MARRIED</option>
+                            <option value="WIDOWER">WIDOWER</option>
+                            <option value="DIVORCED">DIVORCED</option>
+                            <option value="SEPERATED">SEPERATED</option>
+                            <option value="WIDOW">WIDOW</option>
+                            <option value="OTHERS">OTHERS</option>
+                            <option value="UNKNOWN">UNKNOWN</option>
+                        </select><br><br>
+                        <label for="fathername">Father/Spouse's Name: </label>
+                        <input type="text" id="fathername" name="fathername"
+                            placeholder="Enter Father/Spouse's Name"><br><br></input>
+                        <label for="Education">*Education: </label>
+                        <select name="Education" required>
+                            <option value="">Select Education</option>
+                            <option value="ILLITERATE">ILLITERATE</option>
+                            <option value="LITERATE">LITERATE</option>
+                            <option value="PRIMARY">PRIMARY</option>
+                            <option value="MIDDLE">MIDDLE</option>
+                            <option value="SECONDARY">SECONDARY</option>
+                            <option value="TECHNICAL">TECHNICAL</option>
+                            <option value="COLLEGE AND ABOVE">COLLEGE AND ABOVE</option>
+                            <option value="OTHERS">OTHERS</option>
+                            <option value="UNKNOWN">UNKNOWN</option>
+                            <option value="LESS THAN 5 YRS OLD">LESS THAN 5 YRS OLD</option>
+                        </select><br><br>
+                        <label for="Occupation">Occupation: </label>
+                        <select name="Occupation">
+                            <option value="">Select Occupation</option>
+                            <option value="BUSINESS">BUSINESS</option>
+                            <option value="HOUSE WIFE">HOUSE WIFE</option>
+                            <option value="SERVICE">SERVICE</option>
+                            <option value="PENSIONER">PENSIONER</option>
+                            <option value="RETIRED">RETIRED</option>
+                            <option value="STUDENT">STUDENT</option>
+                            <option value="UNEMPLOYED">UNEMPLOYED</option>
+                            <option value="OTHERS">OTHERS</option>
+                            <option value="AGRICULTURE">AGRICULTURE</option>
+                            <option value="UNKNOWN">UNKNOWN</option>
+                        </select><br><br>
+                        <label for="fim">Family Income Monthly (Rs.): </label>
+                        <input type="text" id="fim" name="fim" placeholder="Enter Family Income"><br><br></input>
+                        <label for="Nationality">*Nationality: </label>
+                        <select name="Nationality" required>
+                            <option value="">Select Nationality</option>
+                            <option value="Indian">Indian</option>
+                            <option value="Foreign">Foreign</option>
+                            <option value="UNKNOWN">UNKNOWN</option>
+                        </select><br><br>
+                        <label for="Religion">Religion: </label>
+                        <select name="Religion" required>
+                            <option value="">Select Religion</option>
+                            <option value="ANGLO INDIAN">ANGLO INDIAN</option>
+                            <option value="CHRISTIAN">CHRISTIAN</option>
+                            <option value="HINDU">HINDU</option>
+                            <option value="JAIN">JAIN</option>
+                            <option value="JEW">JEW</option>
+                            <option value="MUSLIM">MUSLIM</option>
+                            <option value="NEO-BUDDHIST">NEO-BUDDHIST</option>
+                            <option value="OTHERS">OTHERS</option>
+                            <option value="PARSI">PARSI</option>
+                            <option value="SIKH">SIKH</option>
+                            <option value="UNKNOWN">UNKNOWN</option>
+                        </select><br><br>
+                        <label for="Mother_Tongue">*Mother Tongue: </label>
+                        <select name="Mother_Tongue" required>
+                            <option value="">Select Mother Tongue</option>
+                            <option value="ASSAMESE">ASSAMESE</option>
+                            <option value="BENGALI">BENGALI</option>
+                            <option value="ENGLISH">ENGLISH</option>
+                            <option value="GUJARATHI">GUJARATHI</option>
+                            <option value="HINDI">HINDI</option>
+                            <option value="KANNADA">KANNADA</option>
+                            <option value="KASHMIRI">KASHMIRI</option>
+                            <option value="kONKANI">kONKANI</option>
+                            <option value="MALAYALAM">MALAYALAM</option>
+                            <option value="MARATHI">MARATHI</option>
+                            <option value="MARWARI">MARWARI</option>
+                            <option value="NEPALI">NEPALI</option>
+                            <option value="ORIYA">ORIYA</option>
+                            <option value="OTHERS">OTHERS</option>
+                            <option value="PUNJABI">PUNJABI</option>
+                            <option value="RAJASTHANI">RAJASTHANI</option>
+                            <option value="SANSKRIT">SANSKRIT</option>
+                            <option value="SINDHI">SINDHI</option>
+                            <option value="TAMIL">TAMIL</option>
+                            <option value="TELUGU">TELUGU</option>
+                            <option value="TULU">TULU</option>
+                            <option value="UNKNOWN">UNKNOWN</option>
+                            <option value="URDU">URDU</option>
+                        </select><br><br>
+                        <label for="Pan_No">Pan No.: </label>
+                        <input type="text" name="Pan_No" placeholder="Enter Pan No."><br><br></input>
+                        <label for="Aadhaar_Number">Aadhaar Number: </label>
+                        <input type="text" name="Aadhaar_Number" placeholder="Enter Aadhaar Number"><br><br></input>
+                    </div>
+                    
+            </div>
+                </th>
+                </thead>
+            </table>
+            <br>
+            
+            <br><br>
+            
     <br><br>
     <br>
     <center style="font-size: 15px;">
-        <h3>
-            <label for="Medical_Insurance">Medical Insurance :
-                <input id="Yes" name="Medical_Insurance" type="radio" value="true" />Yes
-                <input id="No" name="Medical_Insurance" type="radio" value="False" />No
-        </h3>
-        </label>
-
-        <h3><input type="checkbox" id="tc" name="tc" value="true" required>
-            <b>I understand and agree to provide personal information.*</b>
-        </h3>
-        <input type="submit" />
-        <button type="reset" value="Reset"><a href="REGISTRATION1.html">Reset</a></button>
-        <br><br>
-        <br>
-        </div>
-    </center>
+                    <h3>
+                        <label for="Medical_Insurance">Medical Insurance :
+                            <input id="Yes" name="Medical_Insurance" type="radio" value="true" />Yes
+                            <input id="No" name="Medical_Insurance" type="radio" value="False" />No
+                    </h3>
+                    </label>
+        
+    <h3><input type="checkbox" id="tc" name="tc" value="true" required>
+        <b>I understand and agree to provide personal information.*</b>
+    </h3>
+    <input type="submit" />
+    <button type="reset" value="Reset"><a href="REGISTRATION1.html">Reset</a></button>
+    <br><br>
+    <br>
+</div>
+</center>
     <div class="top">
         <br>
         <div>
