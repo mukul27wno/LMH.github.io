@@ -21,6 +21,8 @@
 </style>
 
 <body bgcolor="mistyrose">
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="icon-chevron-up">↑</i></button>
+
     <table>
         <tr>
             <td><img src="hos1.png"></h1></I></td>
@@ -163,51 +165,68 @@
         </div>
     </div>
 -->
-<div class="footer">
+    <div class="footer">
 
-    <table style="margin-bottom: 40px; text-size-adjust: 10000px;;">
-        <th>
-            <ul style="margin-bottom: 5px;">
+        <table style="margin-bottom: 40px; text-size-adjust: 10000px;;">
+            <th>
+                <ul style="margin-bottom: 5px;">
 
-                <h3>
-                    <li>About us</li>
-                    <li>“Our mission is to bring healthcare of International standards within the reach of every individual. 
-                     We are committed to the achievement and maintenance of excellence in education, research and 
-                     healthcare for the benefit of humanity”
-                </h3>
-            </ul>
-        </th>
+                    <h3>
+                        <li>About us</li>
+                        <li>“Our mission is to bring healthcare of International standards within the reach of every
+                            individual.
+                            We are committed to the achievement and maintenance of excellence in education, research and
+                            healthcare for the benefit of humanity”
+                    </h3>
+                </ul>
+            </th>
 
-        <th>
-            <ul style="margin-bottom: 5px;">
-                
+            <th>
+                <ul style="margin-bottom: 5px;">
+
                     <li>HOME</li>
                     <li> REGISTRATION</li>
                     <li>SPECIALIZATION </li>
                     <li>PROCEDURES</li>
                     <li> LOCATION</li>
-                
 
-            </ul>
-        </th>
-        <th>
-            <ul style="margin-bottom: 5px;  ">
-                
+
+                </ul>
+            </th>
+            <th>
+                <ul style="margin-bottom: 5px;  ">
+
                     <li>Email</li>
                     <li><a href="20BCS5125@cuchd.in">ANAYA</a></li>
                     <li><a href="20BCS5155@cuchd.in">HARSH</a></li>
                     <li><a href="20BCS5156@cuchd.in">MUKUL</a></li>
                     <li><a href="20BCS5163@cuchd.in">ANKIT</a></li>
-                
-            </ul>
-        </th>
 
-    </table>
-    <hr style="background-color: white;">
-    
-    <p style="color: white; text-align: right" ;><big><big>Contact Us +91 96366 20000 / 01 |
-        | LifeM@hospital.com <br>
-        Copyright © 2021 Life Matters Hospital. All Right Reserved</p>
+                </ul>
+            </th>
+
+        </table>
+        <hr style="background-color: white;">
+        <script>
+            var mybutton = document.getElementById("myBtn");
+            window.onscroll = function () { scrollFunction() };
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+
+        </script>
+        <p style="color: white; text-align: right" ;><big><big>Contact Us +91 96366 20000 / 01 |
+                    | LifeM@hospital.com <br>
+                    Copyright © 2021 Life Matters Hospital. All Right Reserved</p>
 
 
     </div>
