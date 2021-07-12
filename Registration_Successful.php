@@ -30,8 +30,6 @@
                 <th> <a href="a.html" style=" color: white">SPECIALIZATION</a> </th>
                 <th> <a href="Procedures.html" style=" color: white">PROCEDURES</a></th>
                 <th> <a href="LOCATIONS.html" style="color: white"> LOCATIONS </a></th>
-                <th> SEARCH </th>
-
             </tr>
 
         </table><br>
