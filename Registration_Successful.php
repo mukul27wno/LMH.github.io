@@ -50,7 +50,7 @@
         $result= mysqli_query ($conn,$query);
         $date = date('d')+3;
         $mon = date('M');
-            if($result->num_rows>0)
+        if($result->num_rows>0)
             {
             while($row = $result->fetch_assoc())
             {
