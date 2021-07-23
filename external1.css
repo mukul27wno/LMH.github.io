@@ -55,6 +55,8 @@ p{
   padding:10px;
   text-align:right;
 }
+
+
 td
 {
   text-align: center;
@@ -84,11 +86,13 @@ hr
   font-size: 18px;
   border: none;
 }
+
 .dropdown 
 {
   position: relative;
   display: inline-block;
 }
+
 .dropdown-content 
 {
   display: none;
@@ -156,18 +160,28 @@ hr
 .footer{
   width: 100%;
   color:#fff;
-background-color: black;
-opacity: 0.8;
+  background-color:black;
+  opacity: 0.8;
   padding:10px;
   text-align:center;
-  height: 350px;
+  height: 600px;
   font-family: "Roboto", sans-serif;
-  
+  border-top: solid 5px rgb(167, 107, 100);
 }
+
 
 .footer a
 {
   color: white;
+  text-decoration: none;
+}
+
+ul
+{
+  list-style: none;
+  padding: 0px;
+  margin-left: 20px;
+  line-height: 1.7;
   
 }
 

@@ -1,6 +1,4 @@
-html{
-  font-size: 62.5%;
-}
+
 input 
 {  
   display: inline-block;   
@@ -231,19 +229,20 @@ hr {
 .footer{
   width: 100%;
   color:#fff;
-background-color: black;
-opacity: 0.8;
+  background-color:black;
+  opacity: 0.8;
   padding:10px;
   text-align:center;
-  height: 350px;
+  height: 600px;
   font-family: "Roboto", sans-serif;
-  
+  border-top: solid 5px rgb(167, 107, 100);
 }
+
 
 .footer a
 {
   color: white;
-  
+  text-decoration: none;
 }
 
 ul

@@ -1,28 +1,29 @@
 #myHeader {
-    background-color:#933032;
-    color:maroon;
-    border-radius: 20px;
-    padding-top: 20px;
-    text-align: center;
-  }
+  background-color:#933032;
+  color:maroon;
+  border-radius: 20px;
+  padding-top: 20px;
+  text-align: center;
+}
 
-  .top div{
-    width:1200rpm;
-    color:#fff;
-    background-color:#2FA5EB !important;
-    font-family:calibri;
-    padding:10px;
-    text-align:right;
-  }
-  
+.top div{
+  width:1200rpm;
+  color:#fff;
+  background-color:#2FA5EB !important;
+  font-family:calibri;
+  padding:10px;
+  text-align:right;
+}
+
 .rs1
 {
-  box-shadow: 2px 2px 2px;
-  border: 1px solid maroon;
-  color: black;
-  border: 1px solid;
-  width: 400px;
-  margin: 100px auto 0px auto;
-  background-color: #f5f5f5;
-  border-radius: 10px;
+box-shadow: 2px 2px 2px;
+border: 1px solid maroon;
+color: black;
+border: 1px solid;
+width: 400px;
+margin: 100px auto 0px auto;
+background-color: #f5f5f5;
+border-radius: 10px;
+margin-top: -10px;
 }

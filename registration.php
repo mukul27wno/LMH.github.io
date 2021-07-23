@@ -61,17 +61,6 @@ $Aadhaar_Number = $_POST['Aadhaar_Number'];
 $Medical_Insurance = $_POST['Medical_Insurance'];
 $tc = $_POST['tc'];
 
-/*
-if($Pan_No)
-{
-echo "yes Pan";
-}
-else
-{
-echo "no pan";
-}*/
-/*('initial','fname','lname','contact','email','referral','reAddress','referred','dob','gender','MStatus','fathername','Education','Occupation','fim','Nationality','Religion','Mother_Tongue','Pan_No','Aadhaar_Number','Medical_Insurance','tc') 
-*/
 //Database connection
 $conn = mysqli_connect('localhost','root','','project');
 
