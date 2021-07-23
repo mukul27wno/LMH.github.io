@@ -16,7 +16,7 @@ Setup Process - <br>
 2. install Xampp link - https://www.apachefriends.org/download.html <br>
 3. Download files from - https://github.com/mukul27wno/LMH.github.io/archive/refs/heads/main.zip 
 and extract it and copy complete folder in (installation location of xampp) ~ Xampp/htdocs <br>
-cheers ALl Done!!<br>
+cheers ALL Done!!<br><br>
 For Run - <br>
 open Xampp and start SQL and apache server , <br>
 Now open browser type https://localhost/xampp/LMH
