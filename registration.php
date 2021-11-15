@@ -62,11 +62,19 @@ $Medical_Insurance = $_POST['Medical_Insurance'];
 $tc = $_POST['tc'];
 
 //Database connection
-$conn = mysqli_connect('localhost','root','','project');
+// $conn = mysqli_connect('localhost','root','','project');
+$conn = mysqli_connect('sql6.freesqldatabase.com','sql6450299','tg1rkxExpj','project');
 
+if($conn)
+{
+    echo "Hey"
+}
+else
+{
+    echo "bye"
+}
 
-
- $sql = "INSERT INTO `registration` VALUES ('$initial','$fname','$lname','$contact','$email','$referral','$reAddress','$referred','$dob','$gender','$MStatus','$fathername','$Education','$Occupation','$fim','$Nationality','$Religion','$Mother_Tongue','$Pan_No','$Aadhaar_Number','$Medical_Insurance','$tc')";
+ $sql = "INSERT INTO `sql6450299` VALUES ('$initial','$fname','$lname','$contact','$email','$referral','$reAddress','$referred','$dob','$gender','$MStatus','$fathername','$Education','$Occupation','$fim','$Nationality','$Religion','$Mother_Tongue','$Pan_No','$Aadhaar_Number','$Medical_Insurance','$tc')";
  
 
  $result= mysqli_query($conn,$sql);
